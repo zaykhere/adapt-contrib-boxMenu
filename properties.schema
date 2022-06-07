@@ -7,7 +7,8 @@
     "durationLabel": {
       "type": "string",
       "required": true,
-      "default": "Duration:",
+      "default": "Duración:",
+      "title": "Duración",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -31,53 +32,56 @@
                 "_backgroundImage": {
                   "type": "object",
                   "required": false,
-                  "legend": "Menu background image",
+                  "legend": "Imagen de fondo del menú",
                   "properties": {
                     "_large": {
                       "type": "string",
                       "required": false,
                       "default": "",
+                      "title": "Largo",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Large background image - used on desktop"
+                      "help": "Imagen de fondo grande: se usa en el escritorio"
                     },
                     "_medium": {
                       "type": "string",
                       "required": false,
                       "default": "",
+                      "title": "Medio",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Medium background image - used on tablet"
+                      "help": "Imagen de fondo mediana: utilizada en tabletas"
                     },
                     "_small": {
                       "type": "string",
                       "required": false,
                       "default": "",
+                      "title": "Pequeño",
                       "inputType": "Asset:image",
                       "validators": [],
-                      "help": "Small background image - used on mobile"
+                      "help": "Imagen de fondo pequeña: utilizada en dispositivos móviles"
                     }
                   }
                 },
                 "_backgroundStyles": {
                   "type": "object",
                   "required": false,
-                  "legend": "Menu background image styles",
+                  "legend": "Estilos de imagen de fondo del menú",
                   "properties": {
                     "_backgroundRepeat": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                      "title": "Set if/how the background image repeats",
-                      "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                      "title": "Establecer si/cómo se repite la imagen de fondo",
+                      "help": "Repetir-x: la imagen de fondo se repite solo horizontalmente. Repetir-y: la imagen de fondo se repite solo verticalmente."
                     },
                     "_backgroundSize": {
                       "type": "string",
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
-                      "title": "Set the size of the background image",
+                      "title": "Establecer el tamaño de la imagen de fondo",
                       "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
                     },
                     "_backgroundPosition": {
@@ -85,8 +89,8 @@
                       "required": false,
                       "default": "",
                       "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
-                      "title": "Set the position of the background image",
-                      "help": "The first value is the horizontal position and the second value is the vertical."
+                      "title": "Establecer la posición de la imagen de fondoe",
+                      "help": "El primer valor es la posición horizontal y el segundo valor es la vertical."
                     }
                   }
                 },
@@ -97,7 +101,7 @@
                     "_backgroundImage": {
                       "type": "object",
                       "required": false,
-                      "legend": "Menu header background image",
+                      "legend": "Imagen de fondo del encabezado del menú",
                       "properties": {
                         "_large": {
                           "type": "string",
@@ -105,7 +109,7 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Large background image - used on desktop"
+                          "help": "Imagen de fondo grande: se usa en el escritorio"
                         },
                         "_medium": {
                           "type": "string",
@@ -113,7 +117,7 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Medium background image - used on tablet"
+                          "help": "Imagen de fondo mediana: utilizada en tabletas"
                         },
                         "_small": {
                           "type": "string",
@@ -121,45 +125,45 @@
                           "default": "",
                           "inputType": "Asset:image",
                           "validators": [],
-                          "help": "Small background image - used on mobile"
+                          "help": "Imagen de fondo pequeña: utilizada en dispositivos móviles"
                         }
                       }
                     },
                     "_backgroundStyles": {
                       "type": "object",
                       "required": false,
-                      "legend": "Menu header background image styles",
+                      "legend": "Estilos de imagen de fondo del encabezado del menú",
                       "properties": {
                         "_backgroundRepeat": {
                           "type": "string",
                           "required": false,
                           "default": "",
                           "inputType": {"type":"Select", "options":["repeat","repeat-x","repeat-y","no-repeat"]},
-                          "title": "Set if/how the background image repeats",
-                          "help": "Repeat-x: The background image is repeated only horizontally. Repeat-y: The background image is repeated only vertically."
+                          "title": "Establecer si/cómo se repite la imagen de fondo",
+                          "help": "Repeat-x: La imagen de fondo se repite solo horizontalmente. Repeat-y: La imagen de fondo se repite solo verticalmente."
                         },
                         "_backgroundSize": {
                           "type": "string",
                           "required": false,
                           "default": "",
                           "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
-                          "title": "Set the size of the background image",
-                          "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
+                          "title": "Establecer el tamaño de la imagen de fondo",
+                          "help": "Auto: La imagen de fondo se muestra en su tamaño original. Cover: Cambie el tamaño de la imagen de fondo para cubrir todo el contenedor, incluso si tiene que estirar o recortar la imagen. Contain: Cambie el tamaño de la imagen de fondo para asegurarse de que la imagen sea completamente visible. 100% 100%: Cambiar el tamaño de la imagen de fondo para que coincida con las dimensiones del contenedor."
                         },
                         "_backgroundPosition": {
                           "type": "string",
                           "required": false,
                           "default": "",
                           "inputType": {"type":"Select", "options":["left top","left center","left bottom","center top","center center","center bottom","right top","right center","right bottom"]},
-                          "title": "Set the position of the background image",
-                          "help": "The first value is the horizontal position and the second value is the vertical."
+                          "title": "Establecer la posición de la imagen de fondo",
+                          "help": "El primer valor es la posición horizontal y el segundo valor es la vertical.."
                         }
                       }
                     },
                     "_minimumHeights": {
                       "type": "object",
                       "required": false,
-                      "legend": "Menu header minimum height",
+                      "legend": "Altura mínima del encabezado del menú",
                       "properties": {
                         "_large": {
                           "type": "number",
@@ -167,7 +171,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped"
+                          "help": "La altura mínima solo debe usarse en casos en los que la altura del encabezado del menú debe ser mayor que el contenido, p. para evitar que se recorte una imagen de fondo"
                         },
                         "_medium": {
                           "type": "number",
@@ -175,7 +179,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped"
+                          "help": "La altura mínima solo debe usarse en casos en los que la altura del encabezado del menú debe ser mayor que el contenido, p. para evitar que se recorte una imagen de fondo"
                         },
                         "_small": {
                           "type": "number",
@@ -183,7 +187,7 @@
                           "default": "",
                           "inputType": "Number",
                           "validators": ["number"],
-                          "help": "Minimum height should only be used in instances where the menu header height needs to be greater than the content e.g. to prevent a background image being cropped"
+                          "help": "La altura mínima solo debe usarse en casos en los que la altura del encabezado del menú debe ser mayor que el contenido, p. para evitar que se recorte una imagen de fondo"
                         }
                       }
                     }
@@ -204,10 +208,10 @@
                   "type": "boolean",
                   "required": false,
                   "default": false,
-                  "title": "Enable as menu group?",
+                  "title": "¿Habilitar como grupo de menú?",
                   "inputType": "Checkbox",
                   "validators": [],
-                  "help": "Enable this option to render items into a group on the menu. Groups can display a title, body, and instruction text."
+                  "help": "¿Habilitar como grupo de menú?."
                 }
               }
             }
