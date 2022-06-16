@@ -82,7 +82,7 @@
                       "default": "",
                       "inputType": {"type":"Select", "options":["auto","cover","contain","100% 100%"]},
                       "title": "Establecer el tamaño de la imagen de fondo",
-                      "help": "Auto: The background image is displayed in its original size. Cover: Resize the background image to cover the entire container, even if it has to stretch or crop the image. Contain: Resize the background image to make sure the image is fully visible. 100% 100%: Resize the background image to match the dimensions of the container."
+                      "help": "Auto: La imagen de fondo se muestra en su tamaño original. Cover: Cambie el tamaño de la imagen de fondo para cubrir todo el contenedor, incluso si tiene que estirar o recortar la imagen. Contain: Cambie el tamaño de la imagen de fondo para asegurarse de que la imagen sea completamente visible. 100% 100%: Cambiar el tamaño de la imagen de fondo para que coincida con las dimensiones del contenedor."
                     },
                     "_backgroundPosition": {
                       "type": "string",
@@ -107,6 +107,7 @@
                           "type": "string",
                           "required": false,
                           "default": "",
+                          "title": "Imagen grande",
                           "inputType": "Asset:image",
                           "validators": [],
                           "help": "Imagen de fondo grande: se usa en el escritorio"
@@ -115,6 +116,7 @@
                           "type": "string",
                           "required": false,
                           "default": "",
+                          "title": "Imagen mediana",
                           "inputType": "Asset:image",
                           "validators": [],
                           "help": "Imagen de fondo mediana: utilizada en tabletas"
@@ -123,6 +125,7 @@
                           "type": "string",
                           "required": false,
                           "default": "",
+                          "title": "Imagen pequeña",
                           "inputType": "Asset:image",
                           "validators": [],
                           "help": "Imagen de fondo pequeña: utilizada en dispositivos móviles"
@@ -169,6 +172,7 @@
                           "type": "number",
                           "required": false,
                           "default": "",
+                          "title": "Largo",
                           "inputType": "Number",
                           "validators": ["number"],
                           "help": "La altura mínima solo debe usarse en casos en los que la altura del encabezado del menú debe ser mayor que el contenido, p. para evitar que se recorte una imagen de fondo"
@@ -178,6 +182,7 @@
                           "required": false,
                           "default": "",
                           "inputType": "Number",
+                          "title": "Medio",
                           "validators": ["number"],
                           "help": "La altura mínima solo debe usarse en casos en los que la altura del encabezado del menú debe ser mayor que el contenido, p. para evitar que se recorte una imagen de fondo"
                         },
@@ -185,6 +190,7 @@
                           "type": "number",
                           "required": false,
                           "default": "",
+                          "title": "Pequeña",
                           "inputType": "Number",
                           "validators": ["number"],
                           "help": "La altura mínima solo debe usarse en casos en los que la altura del encabezado del menú debe ser mayor que el contenido, p. para evitar que se recorte una imagen de fondo"
