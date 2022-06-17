@@ -6,7 +6,7 @@
   "bugs": "https://github.com/adaptlearning/adapt-contrib-boxMenu/issues",
   "menu": "boxMenu",
   "displayName": "Box Menu",
-  "description": "A core bundled menu",
+  "description": "Un menú integrado principal",
   "main": "js/adapt-contrib-boxMenu.js",
   "keywords": [
     "adapt-plugin",
